@@ -1,0 +1,11 @@
+C:\Users\Влад Бган\source\repos\курсова\курсова\bin\Debug\курсова.exe.config
+C:\Users\Влад Бган\source\repos\курсова\курсова\bin\Debug\курсова.exe
+C:\Users\Влад Бган\source\repos\курсова\курсова\bin\Debug\курсова.pdb
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.csproj.AssemblyReference.cache
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.mainForm.resources
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.secondForm.resources
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.Properties.Resources.resources
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.csproj.GenerateResource.cache
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.csproj.CoreCompileInputs.cache
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.exe
+C:\Users\Влад Бган\source\repos\курсова\курсова\obj\Debug\курсова.pdb

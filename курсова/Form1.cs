@@ -26,7 +26,6 @@ namespace курсова
         {
             imagesChange.Start();
             concert.FlatAppearance.BorderSize = 1;
-            concert.FlatAppearance.BorderSize = 10;
         }
 
         private void concert_Click(object sender, EventArgs e)

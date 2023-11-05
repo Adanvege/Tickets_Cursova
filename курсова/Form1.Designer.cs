@@ -42,7 +42,6 @@
             // 
             // concert
             // 
-            this.concert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.concert.Location = new System.Drawing.Point(29, 29);
             this.concert.Name = "concert";
             this.concert.Size = new System.Drawing.Size(195, 64);
@@ -53,7 +52,6 @@
             // 
             // circus
             // 
-            this.circus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circus.Location = new System.Drawing.Point(29, 122);
             this.circus.Name = "circus";
             this.circus.Size = new System.Drawing.Size(195, 64);
@@ -64,7 +62,6 @@
             // 
             // movie
             // 
-            this.movie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.movie.Location = new System.Drawing.Point(29, 220);
             this.movie.Name = "movie";
             this.movie.Size = new System.Drawing.Size(195, 64);
@@ -75,7 +72,6 @@
             // 
             // standUp
             // 
-            this.standUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.standUp.Location = new System.Drawing.Point(29, 507);
             this.standUp.Name = "standUp";
             this.standUp.Size = new System.Drawing.Size(195, 64);
@@ -86,7 +82,6 @@
             // 
             // theatre
             // 
-            this.theatre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.theatre.Location = new System.Drawing.Point(29, 409);
             this.theatre.Name = "theatre";
             this.theatre.Size = new System.Drawing.Size(195, 64);
@@ -97,7 +92,6 @@
             // 
             // convention
             // 
-            this.convention.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.convention.Location = new System.Drawing.Point(29, 316);
             this.convention.Name = "convention";
             this.convention.Size = new System.Drawing.Size(195, 64);

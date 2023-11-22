@@ -16,7 +16,7 @@ namespace курсова
     public partial class mainForm : Form
     {
         private int currentImageIndex = 0;
-        private string[] imagePaths = Directory.GetFiles("C:\\Users\\Влад Бган\\source\\repos\\курсова\\курсова\\imagesGallery");
+        private string[] imagePaths = Directory.GetFiles("C:\\Users\\Влад Бган\\source\\repos\\Cursova\\курсова\\imagesGallery");
 
         public mainForm()
         {

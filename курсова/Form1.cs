@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,12 @@ namespace курсова
     public partial class mainForm : Form
     {
         private int currentImageIndex = 0;
-        private string[] imagePaths = new string[] { "image1.jpg", "image2.jpg", "image3.jpg" };
+        private string[] imagePaths = Directory.GetFiles("C:\\Users\\Влад Бган\\source\\repos\\курсова\\курсова\\imagesGallery");
 
         public mainForm()
         {
             InitializeComponent();
+            imagesChange.Start();
         }
 
         private void mainForm_Load(object sender, EventArgs e)
@@ -100,7 +102,7 @@ namespace курсова
 
         private void imagesChange_Tick(object sender, EventArgs e)
         {
-            /*if (currentImageIndex < imagePaths.Length)
+            if (currentImageIndex < imagePaths.Length)
             {
                 popular.Image = Image.FromFile(imagePaths[currentImageIndex]);
                 currentImageIndex++;
@@ -108,7 +110,7 @@ namespace курсова
             else
             {
                 currentImageIndex = 0;
-            }*/
+            }
         }
     }
 }

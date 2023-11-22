@@ -36,18 +36,18 @@
             this.standUp = new System.Windows.Forms.Button();
             this.theatre = new System.Windows.Forms.Button();
             this.convention = new System.Windows.Forms.Button();
-            this.popular = new System.Windows.Forms.PictureBox();
             this.imagesChange = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.popular)).BeginInit();
+            this.popular = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popular)).BeginInit();
             this.SuspendLayout();
             // 
             // concert
             // 
             this.concert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.concert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.concert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.concert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.concert.Location = new System.Drawing.Point(64, 29);
             this.concert.Name = "concert";
             this.concert.Size = new System.Drawing.Size(195, 64);
@@ -60,7 +60,7 @@
             // 
             this.circus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.circus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.circus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.circus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.circus.Location = new System.Drawing.Point(64, 122);
             this.circus.Name = "circus";
             this.circus.Size = new System.Drawing.Size(195, 64);
@@ -73,7 +73,7 @@
             // 
             this.movie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.movie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.movie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.movie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.movie.Location = new System.Drawing.Point(64, 220);
             this.movie.Name = "movie";
             this.movie.Size = new System.Drawing.Size(195, 64);
@@ -86,7 +86,7 @@
             // 
             this.standUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.standUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.standUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.standUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.standUp.Location = new System.Drawing.Point(64, 507);
             this.standUp.Name = "standUp";
             this.standUp.Size = new System.Drawing.Size(195, 64);
@@ -99,7 +99,7 @@
             // 
             this.theatre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.theatre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.theatre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.theatre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.theatre.Location = new System.Drawing.Point(64, 409);
             this.theatre.Name = "theatre";
             this.theatre.Size = new System.Drawing.Size(195, 64);
@@ -112,7 +112,7 @@
             // 
             this.convention.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
             this.convention.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.convention.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.convention.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.convention.Location = new System.Drawing.Point(64, 316);
             this.convention.Name = "convention";
             this.convention.Size = new System.Drawing.Size(195, 64);
@@ -121,34 +121,37 @@
             this.convention.UseVisualStyleBackColor = false;
             this.convention.Click += new System.EventHandler(this.convention_Click);
             // 
-            // popular
-            // 
-            this.popular.Location = new System.Drawing.Point(354, 29);
-            this.popular.Name = "popular";
-            this.popular.Size = new System.Drawing.Size(542, 542);
-            this.popular.TabIndex = 6;
-            this.popular.TabStop = false;
-            this.popular.Click += new System.EventHandler(this.popular_Click);
-            // 
             // imagesChange
             // 
+            this.imagesChange.Interval = 10000;
             this.imagesChange.Tick += new System.EventHandler(this.imagesChange_Tick);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::курсова.Properties.Resources.logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(950, 13);
+            this.pictureBox1.Image = global::курсова.Properties.Resources.logo_removebg_preview3;
+            this.pictureBox1.Location = new System.Drawing.Point(950, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(145, 145);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // popular
+            // 
+            this.popular.Image = global::курсова.Properties.Resources.img1;
+            this.popular.Location = new System.Drawing.Point(354, 29);
+            this.popular.Name = "popular";
+            this.popular.Size = new System.Drawing.Size(542, 542);
+            this.popular.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.popular.TabIndex = 6;
+            this.popular.TabStop = false;
+            this.popular.Click += new System.EventHandler(this.popular_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(1107, 608);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.popular);
@@ -160,10 +163,9 @@
             this.Controls.Add(this.concert);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.mainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
             this.ResumeLayout(false);
 
         }

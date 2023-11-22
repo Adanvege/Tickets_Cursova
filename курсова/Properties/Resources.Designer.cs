@@ -63,9 +63,49 @@ namespace курсова.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img1 {
+            get {
+                object obj = ResourceManager.GetObject("img1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview3 {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

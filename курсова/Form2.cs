@@ -36,7 +36,10 @@ namespace курсова
 
         private void back_Click(object sender, EventArgs e)
         {
+            mainForm mainForm = new mainForm();
 
+            this.Hide();
+            mainForm.Show();
         }
     }
 }

@@ -38,7 +38,9 @@
             // 
             // nameOf
             // 
-            this.nameOf.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameOf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.nameOf.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameOf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
             this.nameOf.Location = new System.Drawing.Point(13, 13);
             this.nameOf.Name = "nameOf";
             this.nameOf.Size = new System.Drawing.Size(215, 35);
@@ -48,7 +50,9 @@
             // 
             // date
             // 
-            this.date.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
             this.date.Location = new System.Drawing.Point(13, 79);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(215, 35);
@@ -58,7 +62,9 @@
             // 
             // city
             // 
-            this.city.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.city.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.city.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.city.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
             this.city.Location = new System.Drawing.Point(13, 148);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(215, 35);
@@ -68,6 +74,8 @@
             // 
             // result
             // 
+            this.result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.result.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
             this.result.Location = new System.Drawing.Point(277, 13);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(542, 170);
@@ -88,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(831, 239);
             this.Controls.Add(this.back);
             this.Controls.Add(this.result);

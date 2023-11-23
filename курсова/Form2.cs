@@ -31,12 +31,12 @@ namespace курсова
 
         private void secondForm_Load(object sender, EventArgs e)
         {
-            back.Image = Image.FromFile("back.png");
+            //back.Image = Image.FromFile("back.png");
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            mainForm mainForm = new mainForm();
+            Form1 mainForm = new Form1();
 
             this.Hide();
             mainForm.Show();

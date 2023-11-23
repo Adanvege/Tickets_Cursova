@@ -13,12 +13,12 @@ using System.Windows.Forms;
 //Tickets
 namespace курсова
 {
-    public partial class mainForm : Form
+    public partial class Form1 : Form
     {
         private int currentImageIndex = 0;
         private string[] imagePaths = Directory.GetFiles("C:\\Users\\Влад Бган\\source\\repos\\Cursova\\курсова\\imagesGallery");
 
-        public mainForm()
+        public Form1()
         {
             InitializeComponent();
             imagesChange.Start();
@@ -111,6 +111,22 @@ namespace курсова
             {
                 currentImageIndex = 0;
             }
+        }
+
+        private void mainLoginButton_Click(object sender, EventArgs e)
+        {
+            loginForm loginForm = new loginForm();
+
+            this.Hide();
+
+            loginForm.Show();
+        }
+
+        private void goToProfile_Click(object sender, EventArgs e)
+        {
+            Profile Profile = new Profile();
+            this.Hide();
+            Profile.Show();
         }
     }
 }

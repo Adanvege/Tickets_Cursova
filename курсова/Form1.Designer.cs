@@ -1,6 +1,6 @@
 ﻿namespace курсова
 {
-    partial class mainForm
+    partial class Form1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.concert = new System.Windows.Forms.Button();
             this.circus = new System.Windows.Forms.Button();
             this.movie = new System.Windows.Forms.Button();
@@ -39,6 +39,8 @@
             this.imagesChange = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.popular = new System.Windows.Forms.PictureBox();
+            this.mainLoginButton = new System.Windows.Forms.Button();
+            this.goToProfile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).BeginInit();
             this.SuspendLayout();
@@ -147,12 +149,40 @@
             this.popular.TabStop = false;
             this.popular.Click += new System.EventHandler(this.popular_Click);
             // 
-            // mainForm
+            // mainLoginButton
+            // 
+            this.mainLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.mainLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mainLoginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
+            this.mainLoginButton.Location = new System.Drawing.Point(939, 437);
+            this.mainLoginButton.Name = "mainLoginButton";
+            this.mainLoginButton.Size = new System.Drawing.Size(156, 64);
+            this.mainLoginButton.TabIndex = 8;
+            this.mainLoginButton.Text = "Вхід";
+            this.mainLoginButton.UseVisualStyleBackColor = false;
+            this.mainLoginButton.Click += new System.EventHandler(this.mainLoginButton_Click);
+            // 
+            // goToProfile
+            // 
+            this.goToProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.goToProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.goToProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
+            this.goToProfile.Location = new System.Drawing.Point(939, 507);
+            this.goToProfile.Name = "goToProfile";
+            this.goToProfile.Size = new System.Drawing.Size(156, 64);
+            this.goToProfile.TabIndex = 9;
+            this.goToProfile.Text = "Профіль";
+            this.goToProfile.UseVisualStyleBackColor = false;
+            this.goToProfile.Click += new System.EventHandler(this.goToProfile_Click);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(1107, 608);
+            this.Controls.Add(this.goToProfile);
+            this.Controls.Add(this.mainLoginButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.popular);
             this.Controls.Add(this.standUp);
@@ -162,7 +192,8 @@
             this.Controls.Add(this.circus);
             this.Controls.Add(this.concert);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "mainForm";
+            this.Name = "Form1";
+            this.Text = "Головна";
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
@@ -181,6 +212,8 @@
         private System.Windows.Forms.PictureBox popular;
         private System.Windows.Forms.Timer imagesChange;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button mainLoginButton;
+        private System.Windows.Forms.Button goToProfile;
     }
 }
 

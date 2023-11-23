@@ -88,6 +88,7 @@
             // 
             // back
             // 
+            this.back.Image = global::курсова.Properties.Resources.return_104;
             this.back.Location = new System.Drawing.Point(13, 190);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(46, 46);

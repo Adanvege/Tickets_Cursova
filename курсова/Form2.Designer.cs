@@ -47,6 +47,7 @@
             this.nameOf.TabIndex = 0;
             this.nameOf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameOf.TextChanged += new System.EventHandler(this.nameOf_TextChanged);
+            this.nameOf.MouseDown += new System.Windows.Forms.MouseEventHandler(this.nameOf_MouseDown);
             // 
             // date
             // 
@@ -59,6 +60,8 @@
             this.date.TabIndex = 1;
             this.date.Text = "Дата...";
             this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.date.TextChanged += new System.EventHandler(this.date_TextChanged);
+            this.date.MouseDown += new System.Windows.Forms.MouseEventHandler(this.date_MouseDown);
             // 
             // city
             // 
@@ -71,6 +74,7 @@
             this.city.TabIndex = 2;
             this.city.Text = "Місто...";
             this.city.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.city.MouseDown += new System.Windows.Forms.MouseEventHandler(this.city_MouseDown);
             // 
             // result
             // 

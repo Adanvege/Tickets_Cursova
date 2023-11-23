@@ -41,5 +41,25 @@ namespace курсова
             this.Hide();
             mainForm.Show();
         }
+
+        private void date_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameOf_MouseDown(object sender, MouseEventArgs e)
+        {
+            nameOf.Text = "";
+        }
+
+        private void city_MouseDown(object sender, MouseEventArgs e)
+        {
+            city.Text = "";
+        }
+
+        private void date_MouseDown(object sender, MouseEventArgs e)
+        {
+            date.Text = "";
+        }
     }
 }

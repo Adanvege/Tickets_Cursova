@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 //Tickets
 namespace курсова
@@ -33,67 +34,67 @@ namespace курсова
         private void concert_Click(object sender, EventArgs e)
         {
             secondForm secondForm= new secondForm();
-            secondForm.setTextBoxText("Назва гурту...");
+            //secondForm.setTextBoxText("Назва гурту...");
 
             this.Hide();
             secondForm.Show();
         }
 
-        private void circus_Click(object sender, EventArgs e)
-        {
-            secondForm secondForm = new secondForm();
+        //private void circus_Click(object sender, EventArgs e)
+        //{
+        //    secondForm secondForm = new secondForm();
 
-            secondForm.setTextBoxText("Назва гурту...");
+        //    secondForm.setTextBoxText("Назва гурту...");
 
-            this.Hide();
+        //    this.Hide();
 
-            secondForm.Show();
-        }
+        //    secondForm.Show();
+        //}
 
-        private void movie_Click(object sender, EventArgs e)
-        {
-            secondForm secondForm = new secondForm();
+        //private void movie_Click(object sender, EventArgs e)
+        //{
+        //    secondForm secondForm = new secondForm();
 
-            secondForm.setTextBoxText("Назва...");
+        //    secondForm.setTextBoxText("Назва...");
 
-            this.Hide();
+        //    this.Hide();
 
-            secondForm.Show();
-        }
+        //    secondForm.Show();
+        //}
 
-        private void convention_Click(object sender, EventArgs e)
-        {
-            secondForm secondForm = new secondForm();
+        //private void convention_Click(object sender, EventArgs e)
+        //{
+        //    secondForm secondForm = new secondForm();
 
-            secondForm.setTextBoxText("Назва...");
+        //    secondForm.setTextBoxText("Назва...");
 
-            this.Hide();
+        //    this.Hide();
 
-            secondForm.Show();
+        //    secondForm.Show();
 
-        }
+        //}
 
-        private void theatre_Click(object sender, EventArgs e)
-        {
-            secondForm secondForm = new secondForm();
+        //private void theatre_Click(object sender, EventArgs e)
+        //{
+        //    secondForm secondForm = new secondForm();
 
-            secondForm.setTextBoxText("Назва гурту...");
+        //    secondForm.setTextBoxText("Назва гурту...");
 
-            this.Hide();
+        //    this.Hide();
 
-            secondForm.Show();
-        }
+        //    secondForm.Show();
+        //}
 
-        private void standUp_Click(object sender, EventArgs e)
-        {
-            secondForm secondForm = new secondForm();
+        //private void standUp_Click(object sender, EventArgs e)
+        //{
+        //    secondForm secondForm = new secondForm();
 
-            secondForm.setTextBoxText("Назва гурту...");
+        //    secondForm.setTextBoxText("Назва гурту...");
 
-            this.Hide();
+        //    this.Hide();
 
-            secondForm.Show();
-        }
+        //    secondForm.Show();
+        //}
 
         private void popular_Click(object sender, EventArgs e)
         {
@@ -122,11 +123,12 @@ namespace курсова
             loginForm.Show();
         }
 
-        private void goToProfile_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Profile Profile = new Profile();
-            this.Hide();
-            Profile.Show();
+
         }
     }
+
+    
+
 }

@@ -23,3 +23,4 @@ C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\кур�
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.loginForm.resources
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Profile.resources
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Register.resources
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.MainAfterLogin.resources

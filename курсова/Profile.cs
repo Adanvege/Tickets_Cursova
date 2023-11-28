@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace курсова
 {
@@ -15,11 +16,12 @@ namespace курсова
         public Profile()
         {
             InitializeComponent();
+           
         }
-
-        private void profileLoginLable_Click(object sender, EventArgs e)
+        public string UserLogin
         {
-
+            get { return profileLoginLable.Text; }
+            set { profileLoginLable.Text = value; }
         }
 
         private void returnToMain_Click(object sender, EventArgs e)
@@ -28,6 +30,16 @@ namespace курсова
 
             this.Hide();
             mainForm.Show();
+        }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void profileLoginLable_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

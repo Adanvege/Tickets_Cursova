@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.profileLoginLable = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.history = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.returnToMain = new System.Windows.Forms.PictureBox();
+            this.profileLoginLable = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnToMain)).BeginInit();
             this.SuspendLayout();
-            // 
-            // profileLoginLable
-            // 
-            this.profileLoginLable.AutoSize = true;
-            this.profileLoginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
-            this.profileLoginLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.profileLoginLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
-            this.profileLoginLable.Location = new System.Drawing.Point(15, 130);
-            this.profileLoginLable.Name = "profileLoginLable";
-            this.profileLoginLable.Size = new System.Drawing.Size(120, 25);
-            this.profileLoginLable.TabIndex = 0;
-            this.profileLoginLable.Text = "Ваш Логин";
-            this.profileLoginLable.Click += new System.EventHandler(this.profileLoginLable_Click);
             // 
             // history
             // 
@@ -80,18 +68,30 @@
             this.returnToMain.TabStop = false;
             this.returnToMain.Click += new System.EventHandler(this.returnToMain_Click);
             // 
+            // profileLoginLable
+            // 
+            this.profileLoginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
+            this.profileLoginLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.profileLoginLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
+            this.profileLoginLable.Location = new System.Drawing.Point(2, 133);
+            this.profileLoginLable.Name = "profileLoginLable";
+            this.profileLoginLable.Size = new System.Drawing.Size(131, 29);
+            this.profileLoginLable.TabIndex = 4;
+            this.profileLoginLable.TextChanged += new System.EventHandler(this.profileLoginLable_TextChanged);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(1140, 641);
+            this.Controls.Add(this.profileLoginLable);
             this.Controls.Add(this.returnToMain);
             this.Controls.Add(this.history);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.profileLoginLable);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Profile";
-            this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnToMain)).EndInit();
             this.ResumeLayout(false);
@@ -100,10 +100,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label profileLoginLable;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox history;
         private System.Windows.Forms.PictureBox returnToMain;
+        private System.Windows.Forms.TextBox profileLoginLable;
     }
 }

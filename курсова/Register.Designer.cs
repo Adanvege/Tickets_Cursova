@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.showPassword = new System.Windows.Forms.CheckBox();
             this.RegisterButton = new System.Windows.Forms.Button();
             this.passwordLable = new System.Windows.Forms.Label();
@@ -60,6 +61,7 @@
             this.RegisterButton.TabIndex = 12;
             this.RegisterButton.Text = "Зареєструватися";
             this.RegisterButton.UseVisualStyleBackColor = false;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // passwordLable
             // 
@@ -134,8 +136,9 @@
             this.Controls.Add(this.passwordRegisterBox);
             this.Controls.Add(this.loginLable);
             this.Controls.Add(this.loginRegisterBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Register";
-            this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.returnToMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.loginBox = new System.Windows.Forms.TextBox();
             this.loginLable = new System.Windows.Forms.Label();
             this.passwordLable = new System.Windows.Forms.Label();
@@ -89,6 +90,7 @@
             this.Login.TabIndex = 4;
             this.Login.Text = "Вхід";
             this.Login.UseVisualStyleBackColor = false;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // GoToRegisterForm
             // 
@@ -100,6 +102,7 @@
             this.GoToRegisterForm.TabIndex = 5;
             this.GoToRegisterForm.Text = "Зареєструватися";
             this.GoToRegisterForm.UseVisualStyleBackColor = false;
+            this.GoToRegisterForm.Click += new System.EventHandler(this.GoToRegisterForm_Click);
             // 
             // showPassword
             // 
@@ -147,8 +150,8 @@
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.loginLable);
             this.Controls.Add(this.loginBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "loginForm";
-            this.Text = "Вхід";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnToMain)).EndInit();

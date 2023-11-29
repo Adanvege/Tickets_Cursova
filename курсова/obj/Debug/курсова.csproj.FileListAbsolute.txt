@@ -13,10 +13,14 @@ C:\Users\Влад Бган\source\repos\Cursova\курсова\bin\Debug\кур�
 C:\Users\Влад Бган\source\repos\Cursova\курсова\bin\Debug\курсова.exe
 C:\Users\Влад Бган\source\repos\Cursova\курсова\bin\Debug\курсова.pdb
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.csproj.AssemblyReference.cache
-C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.mainForm.resources
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.secondForm.resources
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Properties.Resources.resources
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.csproj.GenerateResource.cache
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.csproj.CoreCompileInputs.cache
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.exe
 C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.pdb
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Form1.resources
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.loginForm.resources
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Profile.resources
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.Register.resources
+C:\Users\Влад Бган\source\repos\Cursova\курсова\obj\Debug\курсова.MainAfterLogin.resources

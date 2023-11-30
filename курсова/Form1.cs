@@ -40,61 +40,6 @@ namespace курсова
             secondForm.Show();
         }
 
-        //private void circus_Click(object sender, EventArgs e)
-        //{
-        //    secondForm secondForm = new secondForm();
-
-        //    secondForm.setTextBoxText("Назва гурту...");
-
-        //    this.Hide();
-
-        //    secondForm.Show();
-        //}
-
-        //private void movie_Click(object sender, EventArgs e)
-        //{
-        //    secondForm secondForm = new secondForm();
-
-        //    secondForm.setTextBoxText("Назва...");
-
-        //    this.Hide();
-
-        //    secondForm.Show();
-        //}
-
-        //private void convention_Click(object sender, EventArgs e)
-        //{
-        //    secondForm secondForm = new secondForm();
-
-        //    secondForm.setTextBoxText("Назва...");
-
-        //    this.Hide();
-
-        //    secondForm.Show();
-
-        //}
-
-        //private void theatre_Click(object sender, EventArgs e)
-        //{
-        //    secondForm secondForm = new secondForm();
-
-        //    secondForm.setTextBoxText("Назва гурту...");
-
-        //    this.Hide();
-
-        //    secondForm.Show();
-        //}
-
-        //private void standUp_Click(object sender, EventArgs e)
-        //{
-        //    secondForm secondForm = new secondForm();
-
-        //    secondForm.setTextBoxText("Назва гурту...");
-
-        //    this.Hide();
-
-        //    secondForm.Show();
-        //}
 
         private void popular_Click(object sender, EventArgs e)
         {

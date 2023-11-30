@@ -164,5 +164,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\556_arrowright-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\arrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -71,15 +71,16 @@ namespace курсова
                 NameOfShow = nameOf.Text;
                 try
                 {
-                    String querry = "SELECT * FROM Shows_Info WHERE showName = '" + nameOf.Text + "'";
-                    SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
+                    String query = "SELECT * FROM Shows_Info WHERE showName = '" + nameOf.Text + "'";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                     DataTable dtable = new DataTable();
                     sda.Fill(dtable);
 
                     if (dtable.Rows.Count > 0)
                     {
-                        StringBuilder sb = new StringBuilder();
+                        // Преобразуем таблицу в список строк
+                        List<string> showList = new List<string>();
 
                         foreach (DataRow row in dtable.Rows)
                         {
@@ -88,12 +89,35 @@ namespace курсова
                             string showCost = row["showCost"].ToString();
                             string showTown = row["showTown"].ToString();
                             string showLink = row["buyLink"].ToString();
-                            sb.AppendLine("Назва: " + showName + " " + "Тип: " + showType + " " + "Ціна: " + showCost + " " + "Місто: " + showTown + " " + "Придбати: " + showLink);
+
+                            // Формируем строку для отображения
+                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
+
+                            // Добавляем в список
+                            showList.Add(showInfo);
                         }
 
-                        result.Text = sb.ToString();
-                    }
+                        // Сортируем список по цене
+                        for (int i = 0; i < showList.Count - 1; i++)
+                        {
+                            for (int j = i + 1; j < showList.Count; j++)
+                            {
+                                int costI = int.Parse(showList[i].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
+                                int costJ = int.Parse(showList[j].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
 
+                                if (costI > costJ)
+                                {
+                                    // Обмен элементов списка для сортировки
+                                    string temp = showList[i];
+                                    showList[i] = showList[j];
+                                    showList[j] = temp;
+                                }
+                            }
+                        }
+
+                        // Формируем отсортированную строку и выводим в result
+                        result.Text = string.Join(Environment.NewLine, showList);
+                    }
                 }
                 catch
                 {
@@ -111,15 +135,16 @@ namespace курсова
                 ShowType = date.Text;
                 try
                 {
-                    String querry = "SELECT * FROM Shows_Info WHERE showType = '" + date.Text + "'";
-                    SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
+                    String query = "SELECT * FROM Shows_Info WHERE showType = '" + date.Text + "'";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                     DataTable dtable = new DataTable();
                     sda.Fill(dtable);
 
                     if (dtable.Rows.Count > 0)
                     {
-                        StringBuilder sb = new StringBuilder();
+                        // Преобразуем таблицу в список строк
+                        List<string> showList = new List<string>();
 
                         foreach (DataRow row in dtable.Rows)
                         {
@@ -128,12 +153,35 @@ namespace курсова
                             string showCost = row["showCost"].ToString();
                             string showTown = row["showTown"].ToString();
                             string showLink = row["buyLink"].ToString();
-                            sb.AppendLine("Назва: " + showName + " " + "Тип: " + showType + " " + "Ціна: " + showCost + " " + "Місто: " + showTown + " " + "Придбати: " + showLink);
+
+                            // Формируем строку для отображения
+                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
+
+                            // Добавляем в список
+                            showList.Add(showInfo);
                         }
 
-                        result.Text = sb.ToString();
-                    }
+                        // Сортируем список по цене
+                        for (int i = 0; i < showList.Count - 1; i++)
+                        {
+                            for (int j = i + 1; j < showList.Count; j++)
+                            {
+                                int costI = int.Parse(showList[i].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
+                                int costJ = int.Parse(showList[j].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
 
+                                if (costI > costJ)
+                                {
+                                    // Обмен элементов списка для сортировки
+                                    string temp = showList[i];
+                                    showList[i] = showList[j];
+                                    showList[j] = temp;
+                                }
+                            }
+                        }
+
+                        // Формируем отсортированную строку и выводим в result
+                        result.Text = string.Join(Environment.NewLine, showList);
+                    }
                 }
                 catch
                 {
@@ -151,15 +199,16 @@ namespace курсова
                 ShowCity = city.Text;
                 try
                 {
-                    String querry = "SELECT * FROM Shows_Info WHERE showTown = '" + city.Text + "'";
-                    SqlDataAdapter sda = new SqlDataAdapter(querry, conn);
+                    String query = "SELECT * FROM Shows_Info WHERE showTown = '" + city.Text + "'";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                     DataTable dtable = new DataTable();
                     sda.Fill(dtable);
 
                     if (dtable.Rows.Count > 0)
                     {
-                        StringBuilder sb = new StringBuilder();
+                        // Преобразуем таблицу в список строк
+                        List<string> showList = new List<string>();
 
                         foreach (DataRow row in dtable.Rows)
                         {
@@ -168,12 +217,35 @@ namespace курсова
                             string showCost = row["showCost"].ToString();
                             string showTown = row["showTown"].ToString();
                             string showLink = row["buyLink"].ToString();
-                            sb.AppendLine("Назва: " + showName+" " + "Тип: " + showType + " " + "Ціна: " + showCost + " " + "Місто: " + showTown + " " + "Придбати: " + showLink);
+
+                            // Формируем строку для отображения
+                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
+
+                            // Добавляем в список
+                            showList.Add(showInfo);
                         }
 
-                        result.Text=sb.ToString();
-                    }
+                        // Сортируем список по цене
+                        for (int i = 0; i < showList.Count - 1; i++)
+                        {
+                            for (int j = i + 1; j < showList.Count; j++)
+                            {
+                                int costI = int.Parse(showList[i].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
+                                int costJ = int.Parse(showList[j].Split(new[] { "Ціна: " }, StringSplitOptions.None)[1].Split(' ')[0]);
 
+                                if (costI > costJ)
+                                {
+                                    // Обмен элементов списка для сортировки
+                                    string temp = showList[i];
+                                    showList[i] = showList[j];
+                                    showList[j] = temp;
+                                }
+                            }
+                        }
+
+                        // Формируем отсортированную строку и выводим в result
+                        result.Text = string.Join(Environment.NewLine, showList);
+                    }
                 }
                 catch
                 {

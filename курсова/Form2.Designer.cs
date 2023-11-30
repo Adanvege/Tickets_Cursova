@@ -82,11 +82,11 @@
             // result
             // 
             this.result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
-            this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.result.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(218)))));
             this.result.Location = new System.Drawing.Point(277, 13);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(542, 170);
+            this.result.Size = new System.Drawing.Size(885, 170);
             this.result.TabIndex = 3;
             this.result.Text = "";
             this.result.TextChanged += new System.EventHandler(this.result_TextChanged);
@@ -156,7 +156,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(150)))));
-            this.ClientSize = new System.Drawing.Size(831, 239);
+            this.ClientSize = new System.Drawing.Size(1174, 239);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

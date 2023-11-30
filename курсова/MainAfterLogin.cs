@@ -61,5 +61,10 @@ namespace курсова
         {
 
         }
+
+        private void MainAfterLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

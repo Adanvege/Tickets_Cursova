@@ -56,27 +56,45 @@ namespace курсова
 
                 if(dtable.Rows.Count > 0)
                 {
-                    username = loginBox.Text;
-                    user_password = passwordBox.Text;
-
-                    //page that needed to be load next
-                    MainAfterLogin mainForm = new MainAfterLogin();
-                    mainForm.Show();
-                    this.Hide();
+                    try
+                    {
+                        if (loginBox.Text != null && passwordBox.Text != null)
+                        {
+                            username = loginBox.Text;
+                            user_password = passwordBox.Text;
+                        }
+                        else
+                        {
+                            throw new ErrorAuthentication(); //For Expection)                            
+                        }
+                        //page that needed to be load next
+                        MainAfterLogin mainForm = new MainAfterLogin();
+                        mainForm.Show();
+                        this.Hide();
+                    }
+                    catch(ErrorAuthentication EmptyData) 
+                    {
+                    MessageBox.Show($"Empty login or password: {EmptyData.Message}");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid data","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid data","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    
                     loginBox.Clear();
                     passwordBox.Clear();
-
                     loginBox.Focus();
+                    throw new ErrorAuthentication();
                 }
 
             }
-            catch
+            catch (ErrorAuthentication Except)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show($"ErrorAuthentication: {Except.Message}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"General exception: {ex.Message}");
             }
             finally
             {

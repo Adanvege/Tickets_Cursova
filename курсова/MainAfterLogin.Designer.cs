@@ -100,6 +100,7 @@
             this.Controls.Add(this.popular);
             this.Name = "MainAfterLogin";
             this.Text = "MainAfterLogin";
+            this.Load += new System.EventHandler(this.MainAfterLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
             this.ResumeLayout(false);

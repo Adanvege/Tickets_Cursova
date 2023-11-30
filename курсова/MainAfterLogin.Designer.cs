@@ -102,7 +102,6 @@
             this.arrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.arrowLeft.TabIndex = 22;
             this.arrowLeft.TabStop = false;
-            this.arrowLeft.Click += new System.EventHandler(this.arrowLeft_Click);
             // 
             // arrowRight
             // 
@@ -114,7 +113,6 @@
             this.arrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.arrowRight.TabIndex = 21;
             this.arrowRight.TabStop = false;
-            this.arrowRight.Click += new System.EventHandler(this.arrowRight_Click);
             // 
             // MainAfterLogin
             // 

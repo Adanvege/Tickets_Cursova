@@ -62,9 +62,20 @@ namespace курсова
 
         }
 
-        private void MainAfterLogin_Load(object sender, EventArgs e)
+        private void arrowRight_Click(object sender, EventArgs e)
         {
+            if (currentImageIndex > 0)
+            {
+                currentImageIndex--;
+            }
+        }
 
+        private void arrowLeft_Click(object sender, EventArgs e)
+        {
+            if (currentImageIndex > 0 && currentImageIndex < imagePaths.Length)
+            {
+                currentImageIndex++;
+            }
         }
     }
 }

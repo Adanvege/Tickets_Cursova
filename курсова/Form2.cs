@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography.X509Certificates;
 
 namespace курсова
 {
-    
-
+   
     public partial class secondForm : Form
     {
+        
         public secondForm()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace курсова
         SqlConnection conn = new SqlConnection(@"Data Source=NOTIK\SQLEXPRESS;Initial Catalog=LoginCursova;Integrated Security=True");
         public void setTextBoxText(string text)
         {
-            nameOf.Text = text;
+            nameOf.Text = text;           
         }
 
         private void nameOf_TextChanged(object sender, EventArgs e)
@@ -84,17 +85,32 @@ namespace курсова
 
                         foreach (DataRow row in dtable.Rows)
                         {
-                            string showName = row["showName"].ToString();
-                            string showType = row["showType"].ToString();
-                            string showCost = row["showCost"].ToString();
-                            string showTown = row["showTown"].ToString();
-                            string showLink = row["buyLink"].ToString();
+                            try
+                            {
+                                string showName = row["showName"].ToString();
+                                string showType = row["showType"].ToString();
+                                string showCost = row["showCost"].ToString();
+                                string showTown = row["showTown"].ToString();
+                                string showLink = row["buyLink"].ToString();
+                                //int cost = showCost.T
+                                for (int i = 0; i < showTown.Length; i++)
+                                {
+                                    if (char.IsDigit(showTown[i]) || !char.IsDigit(showCost[i]))
+                                    {
+                                        throw new ErrorSpelling();
+                                    }
+                                }
+                                // Формируем строку для отображения
+                                string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
 
-                            // Формируем строку для отображения
-                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
+                                // Добавляем в список
+                                showList.Add(showInfo);
 
-                            // Добавляем в список
-                            showList.Add(showInfo);
+                            }
+                            catch (ErrorSpelling Except)
+                            {
+                                MessageBox.Show($"ErrorSpelling: {Except.Message}");
+                            }
                         }
 
                         // Сортируем список по цене
@@ -119,9 +135,9 @@ namespace курсова
                         result.Text = string.Join(Environment.NewLine, showList);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    MessageBox.Show($"General exception: {ex.Message}");
                 }
                 finally
                 {
@@ -148,17 +164,32 @@ namespace курсова
 
                         foreach (DataRow row in dtable.Rows)
                         {
-                            string showName = row["showName"].ToString();
-                            string showType = row["showType"].ToString();
-                            string showCost = row["showCost"].ToString();
-                            string showTown = row["showTown"].ToString();
-                            string showLink = row["buyLink"].ToString();
+                            try
+                            {
+                                string showName = row["showName"].ToString();
+                                string showType = row["showType"].ToString();
+                                string showCost = row["showCost"].ToString();
+                                string showTown = row["showTown"].ToString();
+                                string showLink = row["buyLink"].ToString();
+                                //int cost = showCost.T
+                                for (int i = 0; i < showTown.Length; i++)
+                                {
+                                    if (char.IsDigit(showTown[i]) || !char.IsDigit(showCost[i]))
+                                    {
+                                        throw new ErrorSpelling();
+                                    }
+                                }
+                                // Формируем строку для отображения
+                                string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
 
-                            // Формируем строку для отображения
-                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
-
-                            // Добавляем в список
-                            showList.Add(showInfo);
+                                // Добавляем в список
+                                showList.Add(showInfo);
+                                
+                            }
+                            catch(ErrorSpelling Except)
+                            {
+                                MessageBox.Show($"ErrorData: {Except.Message}");
+                            }
                         }
 
                         // Сортируем список по цене
@@ -183,9 +214,9 @@ namespace курсова
                         result.Text = string.Join(Environment.NewLine, showList);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    MessageBox.Show($"General exception: {ex.Message}");
                 }
                 finally
                 {
@@ -212,17 +243,32 @@ namespace курсова
 
                         foreach (DataRow row in dtable.Rows)
                         {
-                            string showName = row["showName"].ToString();
-                            string showType = row["showType"].ToString();
-                            string showCost = row["showCost"].ToString();
-                            string showTown = row["showTown"].ToString();
-                            string showLink = row["buyLink"].ToString();
+                            try
+                            {
+                                string showName = row["showName"].ToString();
+                                string showType = row["showType"].ToString();
+                                string showCost = row["showCost"].ToString();
+                                string showTown = row["showTown"].ToString();
+                                string showLink = row["buyLink"].ToString();
+                                //int cost = showCost.T
+                                for (int i = 0; i < showTown.Length; i++)
+                                {
+                                    if (char.IsDigit(showTown[i]) || !char.IsDigit(showCost[i]))
+                                    {
+                                        throw new ErrorSpelling();
+                                    }
+                                }
+                                // Формируем строку для отображения
+                                string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
 
-                            // Формируем строку для отображения
-                            string showInfo = $"Назва: {showName} Тип: {showType} Ціна: {showCost} Місто: {showTown} Придбати: {showLink}";
+                                // Добавляем в список
+                                showList.Add(showInfo);
 
-                            // Добавляем в список
-                            showList.Add(showInfo);
+                            }
+                            catch (ErrorSpelling Except)
+                            {
+                                MessageBox.Show($"ErrorData: {Except.Message}");
+                            }
                         }
 
                         // Сортируем список по цене
@@ -247,9 +293,9 @@ namespace курсова
                         result.Text = string.Join(Environment.NewLine, showList);
                     }
                 }
-                catch
+                catch(Exception Except)
                 {
-
+                    MessageBox.Show($"General exception: {Except.Message}");
                 }
                 finally
                 {

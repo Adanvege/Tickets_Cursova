@@ -52,6 +52,10 @@ namespace курсова
             {
                 popular.Image = Image.FromFile(imagePaths[currentImageIndex]);
                 currentImageIndex++;
+                if (currentImageIndex == imagePaths.Length)
+                {
+                    currentImageIndex = 0;
+                }
             }
             else
             {
@@ -72,6 +76,8 @@ namespace курсова
         {
 
         }
+
+        
     }
 
     

@@ -61,5 +61,21 @@ namespace курсова
         {
 
         }
+
+        private void arrowRight_Click(object sender, EventArgs e)
+        {
+            if (currentImageIndex > 0)
+            {
+                currentImageIndex--;
+            }
+        }
+
+        private void arrowLeft_Click(object sender, EventArgs e)
+        {
+            if (currentImageIndex > 0 && currentImageIndex < imagePaths.Length)
+            {
+                currentImageIndex++;
+            }
+        }
     }
 }

@@ -34,12 +34,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.popular = new System.Windows.Forms.PictureBox();
-            this.arrowLeft = new System.Windows.Forms.PictureBox();
-            this.arrowRight = new System.Windows.Forms.PictureBox();
+            this.imageRight = new System.Windows.Forms.Button();
+            this.imageLeft = new System.Windows.Forms.Button();
+            this.startTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowRight)).BeginInit();
             this.SuspendLayout();
             // 
             // goToProfile
@@ -92,27 +91,32 @@
             this.popular.TabIndex = 16;
             this.popular.TabStop = false;
             // 
-            // arrowLeft
+            // imageRight
             // 
-            this.arrowLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.arrowLeft.Image = global::курсова.Properties.Resources.arrow;
-            this.arrowLeft.Location = new System.Drawing.Point(821, 570);
-            this.arrowLeft.Name = "arrowLeft";
-            this.arrowLeft.Size = new System.Drawing.Size(35, 38);
-            this.arrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.arrowLeft.TabIndex = 22;
-            this.arrowLeft.TabStop = false;
+            this.imageRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.imageRight.BackgroundImage = global::курсова.Properties.Resources._556_arrowright_removebg_preview;
+            this.imageRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageRight.Location = new System.Drawing.Point(855, 571);
+            this.imageRight.Name = "imageRight";
+            this.imageRight.Size = new System.Drawing.Size(38, 35);
+            this.imageRight.TabIndex = 22;
+            this.imageRight.UseVisualStyleBackColor = false;
+            this.imageRight.Click += new System.EventHandler(this.imageRight_Click);
             // 
-            // arrowRight
+            // imageLeft
             // 
-            this.arrowRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.arrowRight.Image = global::курсова.Properties.Resources._556_arrowright_removebg_preview;
-            this.arrowRight.Location = new System.Drawing.Point(862, 570);
-            this.arrowRight.Name = "arrowRight";
-            this.arrowRight.Size = new System.Drawing.Size(35, 38);
-            this.arrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.arrowRight.TabIndex = 21;
-            this.arrowRight.TabStop = false;
+            this.imageLeft.BackgroundImage = global::курсова.Properties.Resources.arrow;
+            this.imageLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageLeft.Location = new System.Drawing.Point(811, 571);
+            this.imageLeft.Name = "imageLeft";
+            this.imageLeft.Size = new System.Drawing.Size(38, 35);
+            this.imageLeft.TabIndex = 21;
+            this.imageLeft.UseVisualStyleBackColor = false;
+            this.imageLeft.Click += new System.EventHandler(this.imageLeft_Click_1);
+            // 
+            // startTimer
+            // 
+            this.startTimer.Tick += new System.EventHandler(this.startTimer_Tick);
             // 
             // MainAfterLogin
             // 
@@ -120,8 +124,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1107, 608);
-            this.Controls.Add(this.arrowLeft);
-            this.Controls.Add(this.arrowRight);
+            this.Controls.Add(this.imageRight);
+            this.Controls.Add(this.imageLeft);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.goToProfile);
             this.Controls.Add(this.pictureBox1);
@@ -131,8 +135,6 @@
             this.Load += new System.EventHandler(this.MainAfterLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowRight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,7 +146,8 @@
         private System.Windows.Forms.PictureBox popular;
         private System.Windows.Forms.Timer imagesChange;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox arrowLeft;
-        private System.Windows.Forms.PictureBox arrowRight;
+        private System.Windows.Forms.Button imageRight;
+        private System.Windows.Forms.Button imageLeft;
+        private System.Windows.Forms.Timer startTimer;
     }
 }

@@ -33,12 +33,11 @@
             this.concert = new System.Windows.Forms.Button();
             this.imagesChange = new System.Windows.Forms.Timer(this.components);
             this.mainLoginButton = new System.Windows.Forms.Button();
-            this.arrowLeft = new System.Windows.Forms.PictureBox();
-            this.arrowRight = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.popular = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowRight)).BeginInit();
+            this.startTimer = new System.Windows.Forms.Timer(this.components);
+            this.imageLeft = new System.Windows.Forms.Button();
+            this.imageRight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).BeginInit();
             this.SuspendLayout();
@@ -74,28 +73,6 @@
             this.mainLoginButton.UseVisualStyleBackColor = false;
             this.mainLoginButton.Click += new System.EventHandler(this.mainLoginButton_Click);
             // 
-            // arrowLeft
-            // 
-            this.arrowLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.arrowLeft.Image = global::курсова.Properties.Resources.arrow;
-            this.arrowLeft.Location = new System.Drawing.Point(821, 570);
-            this.arrowLeft.Name = "arrowLeft";
-            this.arrowLeft.Size = new System.Drawing.Size(35, 38);
-            this.arrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.arrowLeft.TabIndex = 10;
-            this.arrowLeft.TabStop = false;
-            // 
-            // arrowRight
-            // 
-            this.arrowRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.arrowRight.Image = global::курсова.Properties.Resources._556_arrowright_removebg_preview;
-            this.arrowRight.Location = new System.Drawing.Point(862, 570);
-            this.arrowRight.Name = "arrowRight";
-            this.arrowRight.Size = new System.Drawing.Size(35, 38);
-            this.arrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.arrowRight.TabIndex = 9;
-            this.arrowRight.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::курсова.Properties.Resources.logo_removebg_preview3;
@@ -118,14 +95,41 @@
             this.popular.TabStop = false;
             this.popular.Click += new System.EventHandler(this.popular_Click);
             // 
+            // startTimer
+            // 
+            this.startTimer.Tick += new System.EventHandler(this.StartTimer_Tick);
+            // 
+            // imageLeft
+            // 
+            this.imageLeft.BackgroundImage = global::курсова.Properties.Resources.arrow;
+            this.imageLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageLeft.Location = new System.Drawing.Point(811, 571);
+            this.imageLeft.Name = "imageLeft";
+            this.imageLeft.Size = new System.Drawing.Size(38, 35);
+            this.imageLeft.TabIndex = 9;
+            this.imageLeft.UseVisualStyleBackColor = false;
+            this.imageLeft.Click += new System.EventHandler(this.imageLeft_Click);
+            // 
+            // imageRight
+            // 
+            this.imageRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.imageRight.BackgroundImage = global::курсова.Properties.Resources._556_arrowright_removebg_preview;
+            this.imageRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageRight.Location = new System.Drawing.Point(855, 571);
+            this.imageRight.Name = "imageRight";
+            this.imageRight.Size = new System.Drawing.Size(38, 35);
+            this.imageRight.TabIndex = 10;
+            this.imageRight.UseVisualStyleBackColor = false;
+            this.imageRight.Click += new System.EventHandler(this.imageRight_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1107, 608);
-            this.Controls.Add(this.arrowLeft);
-            this.Controls.Add(this.arrowRight);
+            this.Controls.Add(this.imageRight);
+            this.Controls.Add(this.imageLeft);
             this.Controls.Add(this.mainLoginButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.popular);
@@ -133,8 +137,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.mainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.arrowLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arrowRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popular)).EndInit();
             this.ResumeLayout(false);
@@ -148,8 +150,9 @@
         private System.Windows.Forms.Timer imagesChange;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button mainLoginButton;
-        private System.Windows.Forms.PictureBox arrowRight;
-        private System.Windows.Forms.PictureBox arrowLeft;
+        private System.Windows.Forms.Timer startTimer;
+        private System.Windows.Forms.Button imageLeft;
+        private System.Windows.Forms.Button imageRight;
     }
 }
 

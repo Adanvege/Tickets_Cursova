@@ -13,6 +13,7 @@ namespace курсова
 {
     public partial class loginForm : Form
     {
+        public static string SetLoginValue = "";
         public loginForm()
         {
             InitializeComponent();
@@ -62,6 +63,7 @@ namespace курсова
                         {
                             username = loginBox.Text;
                             user_password = passwordBox.Text;
+                            SetLoginValue = username;
                         }
                         else
                         {

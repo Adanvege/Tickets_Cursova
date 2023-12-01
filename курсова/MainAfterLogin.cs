@@ -49,10 +49,7 @@ namespace курсова
         private void goToProfile_Click_1(object sender, EventArgs e)
         {
             loginForm login = new loginForm();
-            string logine = login.GetLoginBox();
-            //profileLoginLable.Text = logine;
             Profile Profile = new Profile();
-            Profile.UserLogin= logine;
             this.Hide();
             Profile.Show();
         }
@@ -62,9 +59,50 @@ namespace курсова
 
         }
 
+        
+
+        
+
         private void MainAfterLogin_Load(object sender, EventArgs e)
         {
+            //a
+        }
 
+        private void imageLeft_Click_1(object sender, EventArgs e)
+        {
+            imagesChange.Stop();
+            if (currentImageIndex <= 0)
+            {
+                currentImageIndex = imagePaths.Length - 1;
+                startTimer.Start();
+            }
+            else
+            {
+                currentImageIndex--;
+                startTimer.Start();
+            }
+        }
+
+        private void imageRight_Click(object sender, EventArgs e)
+        {
+            imagesChange.Stop();
+            if (currentImageIndex == imagePaths.Length - 1)
+            {
+                currentImageIndex = 0;
+                startTimer.Start();
+            }
+            else
+            {
+                currentImageIndex++;
+                startTimer.Start();
+            }
+        }
+
+        private void startTimer_Tick(object sender, EventArgs e)
+        {
+            imagesChange.Start();
+            popular.Image = Image.FromFile(imagePaths[currentImageIndex]);
+            startTimer.Stop();
         }
     }
 }

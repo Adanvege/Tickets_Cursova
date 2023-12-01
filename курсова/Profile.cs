@@ -13,17 +13,12 @@ namespace курсова
 {
     public partial class Profile : Form
     {
+        
         public Profile()
         {
             InitializeComponent();
            
         }
-        public string UserLogin
-        {
-            get { return profileLoginLable.Text; }
-            set { profileLoginLable.Text = value; }
-        }
-
         private void returnToMain_Click(object sender, EventArgs e)
         {
             Form1 mainForm = new Form1();
@@ -34,12 +29,9 @@ namespace курсова
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            
+            userLoginLable.Text = loginForm.SetLoginValue;
         }
 
-        private void profileLoginLable_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

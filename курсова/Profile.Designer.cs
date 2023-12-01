@@ -32,7 +32,7 @@
             this.history = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.returnToMain = new System.Windows.Forms.PictureBox();
-            this.profileLoginLable = new System.Windows.Forms.TextBox();
+            this.userLoginLable = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnToMain)).BeginInit();
             this.SuspendLayout();
@@ -68,16 +68,17 @@
             this.returnToMain.TabStop = false;
             this.returnToMain.Click += new System.EventHandler(this.returnToMain_Click);
             // 
-            // profileLoginLable
+            // userLoginLable
             // 
-            this.profileLoginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.profileLoginLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.profileLoginLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
-            this.profileLoginLable.Location = new System.Drawing.Point(2, 133);
-            this.profileLoginLable.Name = "profileLoginLable";
-            this.profileLoginLable.Size = new System.Drawing.Size(131, 29);
-            this.profileLoginLable.TabIndex = 4;
-            this.profileLoginLable.TextChanged += new System.EventHandler(this.profileLoginLable_TextChanged);
+            this.userLoginLable.AutoSize = true;
+            this.userLoginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.userLoginLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userLoginLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.userLoginLable.Location = new System.Drawing.Point(40, 130);
+            this.userLoginLable.Name = "userLoginLable";
+            this.userLoginLable.Size = new System.Drawing.Size(66, 24);
+            this.userLoginLable.TabIndex = 4;
+            this.userLoginLable.Text = "label1";
             // 
             // Profile
             // 
@@ -85,7 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1140, 641);
-            this.Controls.Add(this.profileLoginLable);
+            this.Controls.Add(this.userLoginLable);
             this.Controls.Add(this.returnToMain);
             this.Controls.Add(this.history);
             this.Controls.Add(this.pictureBox1);
@@ -103,6 +104,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox history;
         private System.Windows.Forms.PictureBox returnToMain;
-        private System.Windows.Forms.TextBox profileLoginLable;
+        private System.Windows.Forms.Label userLoginLable;
     }
 }

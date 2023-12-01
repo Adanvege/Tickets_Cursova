@@ -15,6 +15,7 @@ namespace курсова
 {
     public partial class Register : Form
     {
+        
         public Register()
         {
             InitializeComponent();
@@ -84,9 +85,10 @@ namespace курсова
                     {
                         MessageBox.Show("Register Success");
 
-                        MainAfterLogin mainForm = new MainAfterLogin();
+                        Form1 mainForm = new Form1();
                         mainForm.Show();
                         this.Hide();
+                        
                     }
                     else
                     {

@@ -77,7 +77,42 @@ namespace курсова
 
         }
 
-        
+        private void StartTimer_Tick(object sender, EventArgs e)
+        {
+            imagesChange.Start();
+            popular.Image = Image.FromFile(imagePaths[currentImageIndex]);
+            startTimer.Stop();
+        }
+
+        private void imageLeft_Click(object sender, EventArgs e)
+        {
+            imagesChange.Stop();
+            if (currentImageIndex <= 0)
+            {
+                currentImageIndex = imagePaths.Length-1;
+                startTimer.Start();
+            }
+            else
+            {
+                currentImageIndex--;
+                startTimer.Start();
+            }
+        }
+
+        private void imageRight_Click(object sender, EventArgs e)
+        {
+            imagesChange.Stop();
+            if(currentImageIndex ==imagePaths.Length-1)
+            {
+                currentImageIndex = 0;
+                startTimer.Start();
+            }
+            else
+            {
+                currentImageIndex++;
+                startTimer.Start();
+            }
+        }
     }
 
     

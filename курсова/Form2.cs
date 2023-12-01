@@ -54,15 +54,7 @@ namespace курсова
             nameOf.Text = "";
         }
 
-        private void city_MouseDown(object sender, MouseEventArgs e)
-        {
-            city.Text = "";
-        }
-
-        private void date_MouseDown(object sender, MouseEventArgs e)
-        {
-            date.Text = "";
-        }
+        
 
         private void FindButton_Click(object sender, EventArgs e)
         {
@@ -132,13 +124,13 @@ namespace курсова
                 }
             }
 
-            if (date.Text != "")
+            else if (showTypeBox.Text != "")
             {
                 String ShowType;
-                ShowType = date.Text;
+                ShowType = showTypeBox.Text;
                 try
                 {
-                    String query = "SELECT * FROM Shows_Info WHERE showType = '" + date.Text + "'";
+                    String query = "SELECT * FROM Shows_Info WHERE showType = '" + showTypeBox.Text + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                     DataTable dtable = new DataTable();
@@ -199,13 +191,13 @@ namespace курсова
                 }
             }
 
-            if (city.Text != "")
+            else if (showTownBox.Text != "")
             {
                 String ShowCity;
-                ShowCity = city.Text;
+                ShowCity = showTownBox.Text;
                 try
                 {
-                    String query = "SELECT * FROM Shows_Info WHERE showTown = '" + city.Text + "'";
+                    String query = "SELECT * FROM Shows_Info WHERE showTown = '" + showTownBox.Text + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, conn);
 
                     DataTable dtable = new DataTable();
@@ -270,6 +262,16 @@ namespace курсова
         private void result_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void showTypeBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            showTypeBox.Text = "";
+        }
+
+        private void showTownBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            showTownBox.Text = "";
         }
     }
 }

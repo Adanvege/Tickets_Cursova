@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(secondForm));
             this.nameOf = new System.Windows.Forms.TextBox();
-            this.date = new System.Windows.Forms.TextBox();
-            this.city = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.RichTextBox();
             this.back = new System.Windows.Forms.PictureBox();
             this.FindButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.showTypeBox = new System.Windows.Forms.ComboBox();
+            this.showTownBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,31 +53,6 @@
             this.nameOf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameOf.TextChanged += new System.EventHandler(this.nameOf_TextChanged);
             this.nameOf.MouseDown += new System.Windows.Forms.MouseEventHandler(this.nameOf_MouseDown);
-            // 
-            // date
-            // 
-            this.date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
-            this.date.Location = new System.Drawing.Point(13, 90);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(215, 35);
-            this.date.TabIndex = 1;
-            this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.date.TextChanged += new System.EventHandler(this.date_TextChanged);
-            this.date.MouseDown += new System.Windows.Forms.MouseEventHandler(this.date_MouseDown);
-            // 
-            // city
-            // 
-            this.city.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.city.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.city.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
-            this.city.Location = new System.Drawing.Point(13, 148);
-            this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(215, 35);
-            this.city.TabIndex = 2;
-            this.city.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.city.MouseDown += new System.Windows.Forms.MouseEventHandler(this.city_MouseDown);
             // 
             // result
             // 
@@ -151,20 +126,49 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Місто";
             // 
+            // showTypeBox
+            // 
+            this.showTypeBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.showTypeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showTypeBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.showTypeBox.FormattingEnabled = true;
+            this.showTypeBox.Items.AddRange(new object[] {
+            "Стендап",
+            "Концерт"});
+            this.showTypeBox.Location = new System.Drawing.Point(16, 87);
+            this.showTypeBox.Name = "showTypeBox";
+            this.showTypeBox.Size = new System.Drawing.Size(212, 37);
+            this.showTypeBox.TabIndex = 9;
+            this.showTypeBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.showTypeBox_MouseDown);
+            // 
+            // showTownBox
+            // 
+            this.showTownBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.showTownBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showTownBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.showTownBox.FormattingEnabled = true;
+            this.showTownBox.Items.AddRange(new object[] {
+            "Запоріжжя"});
+            this.showTownBox.Location = new System.Drawing.Point(16, 146);
+            this.showTownBox.Name = "showTownBox";
+            this.showTownBox.Size = new System.Drawing.Size(212, 37);
+            this.showTownBox.TabIndex = 10;
+            this.showTownBox.SelectedIndexChanged += new System.EventHandler(this.showTownBox_SelectedIndexChanged);
+            // 
             // secondForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1174, 239);
+            this.Controls.Add(this.showTownBox);
+            this.Controls.Add(this.showTypeBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FindButton);
             this.Controls.Add(this.back);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.city);
-            this.Controls.Add(this.date);
             this.Controls.Add(this.nameOf);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "secondForm";
@@ -178,13 +182,13 @@
         #endregion
 
         private System.Windows.Forms.TextBox nameOf;
-        private System.Windows.Forms.TextBox date;
-        private System.Windows.Forms.TextBox city;
         private System.Windows.Forms.RichTextBox result;
         private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.Button FindButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox showTypeBox;
+        private System.Windows.Forms.ComboBox showTownBox;
     }
 }

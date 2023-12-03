@@ -44,12 +44,12 @@
             // 
             // concert
             // 
-            this.concert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.concert.BackColor = System.Drawing.Color.White;
             this.concert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.concert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
-            this.concert.Location = new System.Drawing.Point(27, 29);
+            this.concert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.concert.Location = new System.Drawing.Point(27, 507);
             this.concert.Name = "concert";
-            this.concert.Size = new System.Drawing.Size(287, 542);
+            this.concert.Size = new System.Drawing.Size(287, 64);
             this.concert.TabIndex = 0;
             this.concert.Text = "Знайти подію";
             this.concert.UseVisualStyleBackColor = false;
@@ -62,9 +62,9 @@
             // 
             // mainLoginButton
             // 
-            this.mainLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.mainLoginButton.BackColor = System.Drawing.Color.Ivory;
             this.mainLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.mainLoginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.mainLoginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.mainLoginButton.Location = new System.Drawing.Point(939, 507);
             this.mainLoginButton.Name = "mainLoginButton";
             this.mainLoginButton.Size = new System.Drawing.Size(156, 64);
@@ -103,7 +103,7 @@
             // 
             this.imageLeft.BackgroundImage = global::курсова.Properties.Resources.arrow;
             this.imageLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageLeft.Location = new System.Drawing.Point(811, 571);
+            this.imageLeft.Location = new System.Drawing.Point(354, 571);
             this.imageLeft.Name = "imageLeft";
             this.imageLeft.Size = new System.Drawing.Size(38, 35);
             this.imageLeft.TabIndex = 9;
@@ -115,7 +115,7 @@
             this.imageRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.imageRight.BackgroundImage = global::курсова.Properties.Resources._556_arrowright_removebg_preview;
             this.imageRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageRight.Location = new System.Drawing.Point(855, 571);
+            this.imageRight.Location = new System.Drawing.Point(858, 571);
             this.imageRight.Name = "imageRight";
             this.imageRight.Size = new System.Drawing.Size(38, 35);
             this.imageRight.TabIndex = 10;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1107, 608);
             this.Controls.Add(this.imageRight);
             this.Controls.Add(this.imageLeft);

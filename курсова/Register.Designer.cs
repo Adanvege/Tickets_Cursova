@@ -50,6 +50,7 @@
             this.showPassword.TabIndex = 15;
             this.showPassword.Text = "Показати пароль";
             this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
             // RegisterButton
             // 
@@ -81,6 +82,7 @@
             this.passwordRegisterBox.Name = "passwordRegisterBox";
             this.passwordRegisterBox.Size = new System.Drawing.Size(340, 38);
             this.passwordRegisterBox.TabIndex = 10;
+            this.passwordRegisterBox.TextChanged += new System.EventHandler(this.passwordRegisterBox_TextChanged);
             // 
             // loginLable
             // 

@@ -19,6 +19,7 @@ namespace курсова
         public Register()
         {
             InitializeComponent();
+            passwordRegisterBox.UseSystemPasswordChar = true;
         }
         SqlConnection conn = new SqlConnection(@"Data Source=NOTIK\SQLEXPRESS;Initial Catalog=LoginCursova;Integrated Security=True");
 
@@ -112,6 +113,23 @@ namespace курсова
                 conn.Close();
             }
 
+        }
+
+        private void passwordRegisterBox_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void showPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(showPassword.Checked)
+            {
+                passwordRegisterBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passwordRegisterBox.UseSystemPasswordChar = true;
+            }
         }
     }
 }

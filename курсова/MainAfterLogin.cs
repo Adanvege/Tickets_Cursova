@@ -56,12 +56,10 @@ namespace курсова
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            secondForm secondForm = new secondForm();
+            this.Hide();
+            secondForm.Show();
         }
-
-        
-
-        
 
         private void MainAfterLogin_Load(object sender, EventArgs e)
         {

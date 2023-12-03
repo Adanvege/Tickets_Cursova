@@ -267,12 +267,14 @@ namespace курсова
         {
             showTypeBox.Text = "";
             showTownBox.Text = "";
+            nameOf.Text = "";
         }
 
         private void showTownBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             showTownBox.Text = "";
             showTypeBox.Text = "";
+            nameOf.Text = "";
         }
     }
 }

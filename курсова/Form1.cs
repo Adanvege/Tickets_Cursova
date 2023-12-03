@@ -17,7 +17,7 @@ namespace курсова
     public partial class Form1 : Form
     {
         private int currentImageIndex = 0;
-        private string[] imagePaths = Directory.GetFiles("E:\\tempD\\Курсовая\\курсова\\imagesGallery");
+        private string[] imagePaths = Directory.GetFiles("C:\\Users\\Влад Бган\\source\\repos\\Cursova\\курсова\\imagesGallery");
         //private string[] imagePaths = Directory.GetFiles("E:\\Курсова\\курсова\\imagesGallery");
         public Form1()
         {
@@ -34,7 +34,7 @@ namespace курсова
         private void concert_Click(object sender, EventArgs e)
         {
             secondForm secondForm= new secondForm();
-            //secondForm.setTextBoxText("Назва гурту...");
+            
 
             this.Hide();
             secondForm.Show();

@@ -44,14 +44,13 @@ namespace курсова
             mainForm.Show();
         }
 
-        private void date_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void nameOf_MouseDown(object sender, MouseEventArgs e)
         {
             nameOf.Text = "";
+            showTypeBox.Text = "";
+            showTownBox.Text = "";
         }
 
         
@@ -124,7 +123,7 @@ namespace курсова
                 }
             }
 
-            else if (showTypeBox.Text != "")
+            if (showTypeBox.Text != "")
             {
                 String ShowType;
                 ShowType = showTypeBox.Text;
@@ -191,7 +190,7 @@ namespace курсова
                 }
             }
 
-            else if (showTownBox.Text != "")
+            if (showTownBox.Text != "")
             {
                 String ShowCity;
                 ShowCity = showTownBox.Text;
@@ -267,11 +266,13 @@ namespace курсова
         private void showTypeBox_MouseDown(object sender, MouseEventArgs e)
         {
             showTypeBox.Text = "";
+            showTownBox.Text = "";
         }
 
         private void showTownBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             showTownBox.Text = "";
+            showTypeBox.Text = "";
         }
     }
 }

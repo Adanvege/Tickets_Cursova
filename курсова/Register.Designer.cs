@@ -44,7 +44,7 @@
             // showPassword
             // 
             this.showPassword.AutoSize = true;
-            this.showPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.showPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.showPassword.ForeColor = System.Drawing.Color.Ivory;
             this.showPassword.Location = new System.Drawing.Point(12, 268);
             this.showPassword.Name = "showPassword";
@@ -69,7 +69,7 @@
             // passwordLable
             // 
             this.passwordLable.AutoSize = true;
-            this.passwordLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.passwordLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.passwordLable.ForeColor = System.Drawing.Color.Ivory;
             this.passwordLable.Location = new System.Drawing.Point(12, 205);
             this.passwordLable.Name = "passwordLable";
@@ -91,7 +91,7 @@
             // loginLable
             // 
             this.loginLable.AutoSize = true;
-            this.loginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.loginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.loginLable.ForeColor = System.Drawing.Color.Ivory;
             this.loginLable.Location = new System.Drawing.Point(12, 121);
             this.loginLable.Name = "loginLable";
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(364, 451);
             this.Controls.Add(this.returnToMain);
             this.Controls.Add(this.showPassword);

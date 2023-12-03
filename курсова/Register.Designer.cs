@@ -44,18 +44,20 @@
             // showPassword
             // 
             this.showPassword.AutoSize = true;
+            this.showPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.showPassword.ForeColor = System.Drawing.Color.Ivory;
             this.showPassword.Location = new System.Drawing.Point(12, 268);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(114, 17);
             this.showPassword.TabIndex = 15;
             this.showPassword.Text = "Показати пароль";
-            this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.UseVisualStyleBackColor = false;
             this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
             // RegisterButton
             // 
-            this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.RegisterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.RegisterButton.BackColor = System.Drawing.Color.Ivory;
+            this.RegisterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.RegisterButton.Location = new System.Drawing.Point(12, 324);
             this.RegisterButton.Name = "RegisterButton";
             this.RegisterButton.Size = new System.Drawing.Size(340, 57);
@@ -67,6 +69,8 @@
             // passwordLable
             // 
             this.passwordLable.AutoSize = true;
+            this.passwordLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.passwordLable.ForeColor = System.Drawing.Color.Ivory;
             this.passwordLable.Location = new System.Drawing.Point(12, 205);
             this.passwordLable.Name = "passwordLable";
             this.passwordLable.Size = new System.Drawing.Size(45, 13);
@@ -75,9 +79,9 @@
             // 
             // passwordRegisterBox
             // 
-            this.passwordRegisterBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.passwordRegisterBox.BackColor = System.Drawing.Color.Ivory;
             this.passwordRegisterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordRegisterBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.passwordRegisterBox.ForeColor = System.Drawing.Color.Black;
             this.passwordRegisterBox.Location = new System.Drawing.Point(12, 224);
             this.passwordRegisterBox.Name = "passwordRegisterBox";
             this.passwordRegisterBox.Size = new System.Drawing.Size(340, 38);
@@ -87,6 +91,8 @@
             // loginLable
             // 
             this.loginLable.AutoSize = true;
+            this.loginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.loginLable.ForeColor = System.Drawing.Color.Ivory;
             this.loginLable.Location = new System.Drawing.Point(12, 121);
             this.loginLable.Name = "loginLable";
             this.loginLable.Size = new System.Drawing.Size(34, 13);
@@ -95,9 +101,9 @@
             // 
             // loginRegisterBox
             // 
-            this.loginRegisterBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.loginRegisterBox.BackColor = System.Drawing.Color.Ivory;
             this.loginRegisterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginRegisterBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.loginRegisterBox.ForeColor = System.Drawing.Color.Black;
             this.loginRegisterBox.Location = new System.Drawing.Point(12, 140);
             this.loginRegisterBox.Name = "loginRegisterBox";
             this.loginRegisterBox.Size = new System.Drawing.Size(340, 38);

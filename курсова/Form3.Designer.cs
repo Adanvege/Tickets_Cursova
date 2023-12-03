@@ -79,6 +79,7 @@
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(340, 38);
             this.passwordBox.TabIndex = 2;
+            this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
             // 
             // Login
             // 
@@ -113,6 +114,7 @@
             this.showPassword.TabIndex = 7;
             this.showPassword.Text = "Показати пароль";
             this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
             // pictureBox1
             // 

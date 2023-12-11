@@ -39,7 +39,8 @@ namespace курсова
     }
     public class SecureException : ErrorBase
     {
-        public SecureException() : base("Pasword is weak")
+        public SecureException() : base("\nMake sure it's at least 15 characters " +
+                    "OR at least 10 characters including a number, spec symbols and a Upercase letter.")
         {
 
         }

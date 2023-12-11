@@ -61,8 +61,7 @@ namespace курсова
             }
             catch(SecureException Except)
             {
-                MessageBox.Show(Except.Message + "\nMake sure it's at least 15 characters " +
-                    "OR at least 10 characters including a number, spec symbols and a Upercase letter.");
+                MessageBox.Show(Except.Message);
                 return;
             }
             loginRegister=loginRegisterBox.Text;

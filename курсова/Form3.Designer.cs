@@ -44,9 +44,9 @@
             // 
             // loginBox
             // 
-            this.loginBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.loginBox.BackColor = System.Drawing.Color.Ivory;
             this.loginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.loginBox.ForeColor = System.Drawing.Color.Black;
             this.loginBox.Location = new System.Drawing.Point(12, 132);
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(340, 38);
@@ -55,6 +55,8 @@
             // loginLable
             // 
             this.loginLable.AutoSize = true;
+            this.loginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
+            this.loginLable.ForeColor = System.Drawing.Color.Ivory;
             this.loginLable.Location = new System.Drawing.Point(12, 113);
             this.loginLable.Name = "loginLable";
             this.loginLable.Size = new System.Drawing.Size(34, 13);
@@ -64,6 +66,8 @@
             // passwordLable
             // 
             this.passwordLable.AutoSize = true;
+            this.passwordLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
+            this.passwordLable.ForeColor = System.Drawing.Color.Ivory;
             this.passwordLable.Location = new System.Drawing.Point(12, 197);
             this.passwordLable.Name = "passwordLable";
             this.passwordLable.Size = new System.Drawing.Size(45, 13);
@@ -72,9 +76,9 @@
             // 
             // passwordBox
             // 
-            this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
+            this.passwordBox.BackColor = System.Drawing.Color.Ivory;
             this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.passwordBox.ForeColor = System.Drawing.Color.Black;
             this.passwordBox.Location = new System.Drawing.Point(12, 216);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(340, 38);
@@ -83,8 +87,8 @@
             // 
             // Login
             // 
-            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.Login.BackColor = System.Drawing.Color.Ivory;
+            this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.Login.Location = new System.Drawing.Point(12, 303);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(340, 57);
@@ -95,8 +99,8 @@
             // 
             // GoToRegisterForm
             // 
-            this.GoToRegisterForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
-            this.GoToRegisterForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.GoToRegisterForm.BackColor = System.Drawing.Color.Ivory;
+            this.GoToRegisterForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
             this.GoToRegisterForm.Location = new System.Drawing.Point(12, 366);
             this.GoToRegisterForm.Name = "GoToRegisterForm";
             this.GoToRegisterForm.Size = new System.Drawing.Size(340, 57);
@@ -108,12 +112,14 @@
             // showPassword
             // 
             this.showPassword.AutoSize = true;
+            this.showPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
+            this.showPassword.ForeColor = System.Drawing.Color.Ivory;
             this.showPassword.Location = new System.Drawing.Point(12, 260);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(114, 17);
             this.showPassword.TabIndex = 7;
             this.showPassword.Text = "Показати пароль";
-            this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.UseVisualStyleBackColor = false;
             this.showPassword.CheckedChanged += new System.EventHandler(this.showPassword_CheckedChanged);
             // 
             // pictureBox1
@@ -141,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(66)))), ((int)(((byte)(107)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(364, 451);
             this.Controls.Add(this.returnToMain);
             this.Controls.Add(this.showPassword);

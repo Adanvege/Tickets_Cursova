@@ -71,9 +71,8 @@
             // userLoginLable
             // 
             this.userLoginLable.AutoSize = true;
-            this.userLoginLable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(42)))), ((int)(((byte)(82)))));
             this.userLoginLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.userLoginLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(170)))));
+            this.userLoginLable.ForeColor = System.Drawing.Color.Ivory;
             this.userLoginLable.Location = new System.Drawing.Point(40, 130);
             this.userLoginLable.Name = "userLoginLable";
             this.userLoginLable.Size = new System.Drawing.Size(66, 24);
